@@ -1,0 +1,26 @@
+services:
+  app1:
+    image: ubuntu:24.04
+    command: bash -c "apt-get update && apt-get install -y iputils-ping && ping app2"
+    privileged: false
+    networks:
+      - network1
+
+  app2:
+    image: ubuntu:24.04
+    command: bash -c "apt-get update && apt-get install -y iputils-ping && ping app1"
+    privileged: false
+    environment:
+      - SECRET_KEY=/run/secrets/secret_key
+    networks:
+      - network2
+
+secrets:
+  secret_key:
+    file: ./secrets/secret_key.txt
+
+networks:
+  network1:
+    driver: bridge
+  network2:
+    driver: bridge

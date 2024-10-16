@@ -1,0 +1,12 @@
+services:
+  app1:
+    image: ubuntu:latest
+    command: bash -c "apt-get update && apt-get install -y iputils-ping && ping app2"
+    privileged: true
+
+  app2:
+    image: ubuntu:latest
+    command: bash -c "apt-get update && apt-get install -y iputils-ping && ping app1"
+    privileged: true
+    environment:
+      - SECRET_KEY=12345
