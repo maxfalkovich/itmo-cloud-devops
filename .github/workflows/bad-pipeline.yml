@@ -29,11 +29,3 @@ jobs:
       - run: |
           cd lab3
           pytest test_main.py
-
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: |
-          cd lab3
-          scp build/main.py user@production:/app/main.py
