@@ -7,4 +7,8 @@
 
 [DevOps lab3. CI/CD](https://github.com/maxfalkovich/itmo-cloud-devops-labs/blob/main/lab3/report.md)
 
-DevOps lab3* - TBD
+DevOps lab3* - TBD?
+
+[Cloud lab1. AWS](https://github.com/maxfalkovich/itmo-cloud-devops-labs/blob/main/cloud_lab1/report.md)
+
+Cloud lab2 - TBD
