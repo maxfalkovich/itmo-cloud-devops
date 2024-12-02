@@ -11,4 +11,4 @@ DevOps lab3* - TBD?
 
 [Cloud lab1. AWS](https://github.com/maxfalkovich/itmo-cloud-devops-labs/blob/main/cloud_lab1/report.md)
 
-[Cloud lab2 - Azure](https://github.com/maxfalkovich/itmo-cloud-devops-labs/blob/main/cloud_lab2/report.md)
+[Cloud lab2. Azure](https://github.com/maxfalkovich/itmo-cloud-devops-labs/blob/main/cloud_lab2/report.md)
